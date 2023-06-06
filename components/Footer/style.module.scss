@@ -1,0 +1,35 @@
+@import "styles/utils";
+
+.footer {
+  position: fixed;
+  bottom: 48px;
+
+  @include media(">desktop") {
+    bottom: 72px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .socialContainer {
+    display: flex;
+    grid-gap: 32px;
+
+    a {
+
+      @include media(">desktop") {
+        &:hover {
+          svg path {
+            fill: #ffffff;
+          }
+        }
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
