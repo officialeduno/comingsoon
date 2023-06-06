@@ -4,6 +4,11 @@ import LaunchCountdown from "../containers/LaunchCountdown";
 import Footer from "../components/Footer";
 
 export default function Home() {
+      const daydate = new Date();
+      const day = 30-(daydate.getDate());
+      const hour = 23-(daydate.getHours());
+      const minute = 59-(daydate.getMinutes());
+      const second = 59-(daydate.getSeconds());
       return (
             <>
                   <Head>
@@ -20,10 +25,10 @@ export default function Home() {
                               We're launching soon a great platform for developers.
                         </h1>
                         <div className={styles.container}>
-                              <LaunchCountdown days={24}
-                                    hours={1}
-                                    minutes={23}
-                                    seconds={50}
+                              <LaunchCountdown days={day}
+                                    hours={hour}
+                                    minutes={minute}
+                                    seconds={second}
                               />
                         </div>
                         <div class="email-content">
