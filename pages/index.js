@@ -17,6 +17,7 @@ export default function Home() {
                               content="width=device-width, initial-scale=1.0"
                         />
                         <link rel="icon" type="image/png" sizes="32x32" href="eduno-white.png" />
+                        <title>Eduno (Empower Yourself with Eduno)</title>
                   </Head>
 
                   <main className={styles.main}>
